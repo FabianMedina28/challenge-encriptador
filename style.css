@@ -1,0 +1,258 @@
+*{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 90%;
+}
+
+body{
+    background-color: #f3f5fc;
+}
+
+.Logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area{
+    background-color: #f3f5fc;
+    border: 0;
+    outline: none;
+    color: #0A3871;
+    margin-top: 20px;
+    text-transform: lowercase;
+    border-radius: 24px;
+    padding: 20px;
+    height: 340px;
+}
+
+::placeholder{ color: #0A3871;}
+    .text_area:focus {
+        outline: none;
+}
+.cajaMensaje{
+    background-color: white;
+    border: none;
+    border-radius: 24px;
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 130px;
+}
+.mensaje{
+    /* background-color: white;
+    border: none;
+    border-radius: 24px; */
+    color: #0A3871;
+
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-desencriptar{
+    background: #d8dfe8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 60px;
+    margin-left: 30px;
+    width: 240px;
+}
+
+.btn-encriptar{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 60px;
+    width: 240px;
+}
+
+.copiar{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 60px;
+    width: 240px;
+    margin-top: 330px;
+}
+
+.informacion{
+    color: #495057;
+    font-size: 18px;
+}
+.fa-circle-exclamation{
+    font-size: 17px;
+    margin-right: 5px;
+}
+p{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    color: #495057;
+}
+h2{
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+}
+.cajaCopiar{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 768px) and (max-height: 1174px) {
+    .Logo {
+        width: 20%;
+        margin-left: 0;
+        padding-top: 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .mensaje img {
+        display: none !important;
+    }
+
+    .text-area {
+        width: 90%;
+        height: 250px;
+    }
+
+    .cajaText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cajaMensaje {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        height: 240px;
+        gap: 32px;
+        border-radius: 32px;
+        margin-left: 0;
+    }
+
+    .fotoDom {
+        display: none;
+    }
+
+    .btn-encriptar, .btn-desencriptar {
+        margin: 10px 20px;
+    }
+
+    .copiar {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 375px) and (max-height: 933px) {
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+    .cajaMensaje {
+        width: 80%;
+        height: 30%;
+        gap: 32px;
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Logo {
+        width: 50%;
+        margin-left: 0;
+        padding-top: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .text-area {
+        width: 80%;
+        height: 30%;
+        font-size: 25px;
+    }
+
+    .mensaje img {
+        display: none !important;
+    }
+
+    .btn-encriptar, .btn-desencriptar {
+        width: 100%;
+        margin: 5px 0; /* Espacio entre botones */
+        font-size: 20px;
+    }
+
+    .copiar {
+        width: 80%;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    h2 {
+
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .informacion{
+        font-size: 15px;
+    }
+
+}

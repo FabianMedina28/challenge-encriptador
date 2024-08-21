@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/1e2541cc15.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/img/Logo.png" alt="logo de alura">
+    </header>
+    <main>
+        <section class="cajaText">
+            <textarea class="text-area" id="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion"><i class="fa-solid fa-circle-exclamation" style="color: #6b6b6b;"></i>Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" >Encriptar</button>
+                <button class="btn-desencriptar" >Desencriptar</button>
+            </div>
+        </section>
+        <section class="cajaMensaje">
+            <div class="mensaje">
+                <img id="fotoDom" class="fotoDom" src="/img/Muneco.png" alt="imagen muñeco">
+                <h2 id="textoDom">Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div class="cajaCopiar">
+                <button id="btn-copiar" class="copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
