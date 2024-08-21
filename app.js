@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const btnCopiar = document.getElementById("btn-copiar");
-    btnCopiar.style.display = "none"; // Ocultar el botón al inicio
+    btnCopiar.style.display = "none"; 
 
     function encriptar() {
         let texto = document.getElementById("text-area").value; 
@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
             textoDom.innerHTML = textoCifrado;
             fotoDom.style.display = "none";
-            btnCopiar.style.display = "block"; // Mostrar el botón "Copiar"
+            btnCopiar.style.display = "block"; 
         } else {
             textoDom.innerHTML = "Ningún mensaje fue encontrado";
             fotoDom.style.display = "block";
-            btnCopiar.style.display = "none"; // Ocultar el botón "Copiar" si no hay mensaje
+            btnCopiar.style.display = "none"; 
         }
 
         console.log(texto);
@@ -42,11 +42,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
             textoDom.innerHTML = textoDescifrado;
             fotoDom.style.display = "none";
-            btnCopiar.style.display = "block"; // Mostrar el botón "Copiar"
+            btnCopiar.style.display = "block"; 
         } else {
             textoDom.innerHTML = "Ningún mensaje fue encontrado";
             fotoDom.style.display = "block";
-            btnCopiar.style.display = "none"; // Ocultar el botón "Copiar" si no hay mensaje
+            btnCopiar.style.display = "none";
         }
 
         console.log(texto);
@@ -61,14 +61,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 btnCopiar.innerText = "Copiado!";
                 setTimeout(() => {
                     btnCopiar.innerText = textoOriginal;
-                }, 2000); // Cambia el texto por 2 segundos
+                }, 2000);
             }).catch(err => {
                 console.error('Error al copiar el texto: ', err);
             });
         }
     }
 
-    // Asigna los eventos a los botones
     document.querySelector(".btn-encriptar").addEventListener("click", encriptar);
     document.querySelector(".btn-desencriptar").addEventListener("click", desencriptar);
     btnCopiar.addEventListener("click", copiarTexto);
